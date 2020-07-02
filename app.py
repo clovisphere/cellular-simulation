@@ -57,7 +57,7 @@ def get_neighbors(matrix, x_index, y_index, total_number_of_rows, total_number_o
 
 def draw(matrix, width):
     """beautify grid on terminal."""
-    # TODO: instead of printing to the terminal, save to file
+    # TODO: instead of printing the matrices on the terminal, save it on a file, maybe?
     header = "==** Game of life **=="
     footer = "==** .. **=="
     print(f"\n\t{header:^{width}}")
@@ -67,13 +67,12 @@ def draw(matrix, width):
 
 if __name__ == '__main__':
     print("let's generate a cellular matrix 🎲 📌\n")
-    q = 'yes'
+    q = ''
     while q.lower() not in ('n', 'no') :
         try:
             rows = int(input('Number of rows: '))
             columns = int(input('Number of columns: '))
             seed = input("Seed (or leave empty if you want to use the system generarted seed): ")
-            # TODO: validate rows and columns
             matrix = init(rows, columns, seed)
             build(matrix, rows, columns, seed)
         except ValueError as e: # TODO: catch any other error/exception that may be thrown
