@@ -5,7 +5,7 @@
 If you don't know about **Conway's Game of Life**, 
 start by reading [this article](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life).
 
-After that, read or go through any of the 3 below ~~recommended~~ videos/articles:
+After that, read or go through any of the 3 ~~recommended~~ videos/articles below:
 1. Daniel Shiffman's [Coding Challenge #85](https://www.youtube.com/watch?v=FWSR_7kZuYg)
 2. [How to write Conway's "Game of Life" in Python](https://medium.com/better-programming/how-to-write-conwells-game-of-life-in-python-c6eca19c4676)
 3. [What are Cellular Automata](https://www.youtube.com/watch?v=E7CxMHsYzSs) by [javidx9](https://community.onelonecoder.com/)
