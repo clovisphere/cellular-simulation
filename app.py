@@ -71,7 +71,7 @@ if __name__ == '__main__':
             columns = int(input('Number of columns: '))
             seed = input("Seed (or leave empty if you want to use the system generarted seed): ")
             # ~> see: https://docs.python.org/3/library/random.html
-            # -> you ay also find this useful: https://stackoverflow.com/questions/22639587/random-seed-what-does-it-do
+            # -> you may also find this useful: https://stackoverflow.com/questions/22639587/random-seed-what-does-it-do
             # initialize the random number generator
             random.seed(seed) if seed else random.seed()
             # the below methods call will do the magic:-)
