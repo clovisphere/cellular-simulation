@@ -4,11 +4,7 @@ import random
 DEAD = '.'
 ALIVE = '0'
 
-def init(rows, cols, seed):
-    # to initialize the random number generator
-    # ~> See: https://docs.python.org/3/library/random.html
-    # initialize the random number generator
-    random.seed(seed) if seed else random.seed()
+def init(rows, cols):
     # populate matrix with 0's
     matrix = [ [j * 0 for j in range(cols)] for i in range(rows) ]
     # populate matrix of i rows and j columns with 0's and *'s
@@ -17,11 +13,11 @@ def init(rows, cols, seed):
             matrix[i][j] = ALIVE if random.randint(0, 1) else DEAD
     return matrix
 
-def build(matrix, rows, cols, seed, _100th_step=100):
+def build(matrix, rows, cols, _100th_step=100):
     print('\nStarting Cellular Matrix ⚡☄️💨🚀')
     draw(matrix, cols)
     while _100th_step > 0:
-        next_matrix = init(rows, cols, seed)
+        next_matrix = init(rows, cols)
         for i in range(rows):
             for j in range(cols):
                 state = matrix[i][j] # get current cell value
@@ -74,8 +70,14 @@ if __name__ == '__main__':
             rows = int(input('Number of rows: '))
             columns = int(input('Number of columns: '))
             seed = input("Seed (or leave empty if you want to use the system generarted seed): ")
-            matrix = init(rows, columns, seed)
-            build(matrix, rows, columns, seed) 
+            # to initialize the random number generator
+            # ~> see: https://docs.python.org/3/library/random.html
+            # -> you ay also find this useful: https://stackoverflow.com/questions/22639587/random-seed-what-does-it-do
+            # initialize the random number generator
+            random.seed(seed) if seed else random.seed()
+            # the below methods call will do the magic:-)
+            matrix = init(rows, columns)
+            build(matrix, rows, columns) 
         except ValueError as e: # TODO: catch any other error/exception that may be thrown
             print(f'An error occurred - {e}\nPlease try again..')
         finally:
