@@ -9,10 +9,11 @@ start by reading [this article](https://en.wikipedia.org/wiki/Conway%27s_Game_of
 3. [What are cellular Automata](https://www.youtube.com/watch?v=E7CxMHsYzSs) by [javidx9](https://community.onelonecoder.com/)
 
 
-##### Requirements
+### Instructions
+
+**Problem**
 
 ```console
-
 You are tasked with creating a program capable of generating a random starting cellular matrix based
 upon a given seed value. The program must then solve and print out the next 100 time-steps of a
 modified game of life simulation. The simulation is guided by a handful of simplistic rules that will result
@@ -30,7 +31,11 @@ Below is an example starting cellular matrix when given an input of 10 rows and 
 	.00..00.0..0...0.0.0
 	.00.0.00..00....0000
 	0.00..0......00.000.
+```
 
+**Direction**
+
+```console
 Develop a program capable of generating a random starting cellular matrix of a size directed by the user.
 Your generator must abide by the following rules:
 1) The starting matrix must only contain the following symbols:
