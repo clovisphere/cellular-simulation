@@ -1,4 +1,4 @@
-# A very basic Game of life simulation
+# A very basic Game of Life simulation
 
 If you don't know about Conway's Game of Life, 
 start by reading [this article](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life).
