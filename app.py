@@ -43,11 +43,9 @@ def get_neighbors(matrix, x_index, y_index, total_number_of_rows, total_number_o
             neighbor_row = x_index + row
             neighbor_col = y_index + col
             # check to see if it's a valid neighbor
-            if neighbor_row == x_index and neighbor_col == y_index:
-                continue # cell shouldn't count itself as neighbor
-            elif neighbor_row < 0 or neighbor_row >= total_number_of_rows:
-                continue
-            elif neighbor_col < 0 or neighbor_col >= total_number_of_cols:
+            if (neighbor_row == x_index and neighbor_col == y_index) \
+                    or (neighbor_row < 0 or neighbor_row >= total_number_of_rows) \
+                    or (neighbor_col < 0 or neighbor_col >= total_number_of_cols):
                 continue
             else:
                 state = matrix[neighbor_row][neighbor_col]
