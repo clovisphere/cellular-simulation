@@ -66,7 +66,7 @@ def draw(matrix, width):
     print(f'\t{footer:^{width}}')
 
 if __name__ == '__main__':
-    print("let's generate a cellular matrix 🎲 📌\n")
+    print("Let's generate a cellular matrix 🎲 📌\n")
     q = ''
     while q.lower() not in ('n', 'no') :
         try:
