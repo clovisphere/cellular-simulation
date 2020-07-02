@@ -1,5 +1,7 @@
 # A very basic Game of Life simulation
 
+![game-of-life-preview](how_it_will_look.png)
+
 If you don't know about Conway's Game of Life, 
 start by reading [this article](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life).
 
@@ -56,4 +58,7 @@ the next time step.
 next time step.
 5) Every other square dies or remains dead, causing it to be “dead” in the next time step.
 ```
+
+##### Requirements
++ [Python](https://www.python.org/downloads/)
 
