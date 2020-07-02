@@ -70,7 +70,6 @@ if __name__ == '__main__':
             rows = int(input('Number of rows: '))
             columns = int(input('Number of columns: '))
             seed = input("Seed (or leave empty if you want to use the system generarted seed): ")
-            # to initialize the random number generator
             # ~> see: https://docs.python.org/3/library/random.html
             # -> you ay also find this useful: https://stackoverflow.com/questions/22639587/random-seed-what-does-it-do
             # initialize the random number generator
@@ -78,7 +77,7 @@ if __name__ == '__main__':
             # the below methods call will do the magic:-)
             matrix = init(rows, columns)
             build(matrix, rows, columns) 
-        except ValueError as e: # TODO: catch any other error/exception that may be thrown
+        except ValueError as e: # TODO: catch any other error/exception that may occur
             print(f'An error occurred - {e}\nPlease try again..')
         finally:
             q = input('Would you like to generate another cellular matrix [Y/N]?: ')
