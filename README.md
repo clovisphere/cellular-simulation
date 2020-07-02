@@ -1,6 +1,6 @@
 # Cellular Simulation (a.k.a a Game of Life example)
 
-![game-of-life-preview](how_it_will_look.png)
+![game-of-life-preview](preview.png)
 
 If you don't know about **Conway's Game of Life**, 
 start by reading [this article](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life).
