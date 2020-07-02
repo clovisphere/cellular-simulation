@@ -82,4 +82,4 @@ if __name__ == '__main__':
             print(f'An error occurred - {e}\nPlease try again..')
         finally:
             q = input('Would you like to generate another cellular matrix [Y/N]?: ')
-    print("🎆🎉🎇 Thank you using the program 🎆🎉🎇")
+    print("🎆🎉🎇 Thank you for using the program 🎆🎉🎇")
