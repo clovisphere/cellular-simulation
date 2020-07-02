@@ -2,7 +2,7 @@
 
 ![game-of-life-preview](how_it_will_look.png)
 
-If you don't know about Conway's Game of Life, 
+If you don't know about **Conway's Game of Life**, 
 start by reading [this article](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life).
 
 After that, read or go through any of the 3 below ~~recommended~~ videos/articles:
