@@ -1,4 +1,4 @@
-# Cellular Simulation (a.k.a Game of Life example)
+# Cellular Simulation (a.k.a a Game of Life example)
 
 ![game-of-life-preview](how_it_will_look.png)
 
