@@ -69,7 +69,7 @@ if __name__ == '__main__':
         try:
             rows = int(input('Number of rows: '))
             columns = int(input('Number of columns: '))
-            seed = input("Seed (or leave empty if you want to use the system generarted seed): ")
+            seed = input("Seed (or leave empty if you want to use the system generated seed): ")
             # ~> see: https://docs.python.org/3/library/random.html
             # -> you may also find this useful: https://stackoverflow.com/questions/22639587/random-seed-what-does-it-do
             # initialize the random number generator
